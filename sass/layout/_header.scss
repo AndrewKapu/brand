@@ -59,7 +59,7 @@
         margin-right: 26px;
 
         &_hover:hover {
-            @include hover1;
+            @include hover-shadow1;
         }
     }
 
@@ -70,13 +70,13 @@
         @include text(14px, 14px, 400, $text-white, none);
 
         &_hover:hover {
-            @include hover1;
+            @include hover-shadow1;
         }
     }
 }
 
 .logo {
-    @include flex-positioning(space-between, center);
+    @include flex-positioning(null, center);
     @include text(27px, 32px, 300, $text-dark, none);
 
     &__text {
@@ -100,6 +100,7 @@
     &__link {
         display: block;
         @include text(14px, null, 700, $text-dark, none);
+        text-transform: uppercase;
         margin: 0 20px;
         padding: 20px 0;
         border-bottom: 3px solid transparent;
