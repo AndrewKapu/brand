@@ -9,6 +9,13 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+// Для safari
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
 /*Прижатие футера к подвалу */
 .wrapper {
     display: flex;
@@ -30,9 +37,11 @@ body {
 }
 
 //Отмена синей рамки при фокусе инпутов и нажатии на button
-input:focus, button:focus {
+input:focus,
+button:focus {
     outline: none;
 }
+
 // Добавление эффекта курсора кнопкам
 button {
     cursor: pointer;

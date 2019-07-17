@@ -8,6 +8,12 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 /*Прижатие футера к подвалу */
 .wrapper {
   display: -webkit-box;
@@ -37,7 +43,8 @@ body {
   margin: 0 auto;
 }
 
-input:focus, button:focus {
+input:focus,
+button:focus {
   outline: none;
 }
 
@@ -118,6 +125,7 @@ button {
 }
 
 .header__form-submit {
+  background: #ffffff;
   position: absolute;
   border: none;
   right: 1px;
@@ -382,6 +390,15 @@ button {
   display: flex;
 }
 
+.products__item_hover:hover .products__img {
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+}
+
+.products__item-link {
+  text-decoration: none;
+}
+
 .products__img {
   display: block;
 }
@@ -413,14 +430,9 @@ button {
 
 .products__hover {
   display: none;
-  position: absolute;
-  top: 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 98px 70px 138px 73px;
-  background-color: #3a3838;
-  opacity: 0.8;
 }
 
 .products__hover-btn {
@@ -437,7 +449,8 @@ button {
   text-decoration: none;
   padding: 10px 9px;
   border: 1px solid #ffffff;
-  width: 99px;
+  position: absolute;
+  top: 98px;
 }
 
 .products__hover-btn-img {
@@ -656,18 +669,21 @@ button {
   position: relative;
   font-size: 14px;
   font-weight: 400;
+  width: 334px;
 }
 
 .subscribe__form-input {
-  padding: 18px 47px 18px 28px;
+  padding: 18px 9px 18px 28px;
   border: none;
   border-radius: 23px 0 0 23px;
   background-color: #e1e1e1;
   color: #222222;
+  width: 229px;
 }
 
 .subscribe__form-btn {
   position: absolute;
+  right: -26px;
   padding: 18px 20px 18px 21px;
   border: none;
   background-color: #f16d7f;

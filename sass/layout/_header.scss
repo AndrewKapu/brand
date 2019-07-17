@@ -36,6 +36,7 @@
     }
 
     &__form-submit {
+        background: $text-white; // Для Safari
         position: absolute;
         border: none;
         right: 1px;

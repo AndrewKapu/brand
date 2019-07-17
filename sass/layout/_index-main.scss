@@ -112,6 +112,14 @@
         &_hover:hover .products__hover {
             display: flex;
         }
+
+        &_hover:hover .products__img {
+            filter: brightness(50%);
+        }
+    }
+
+    &__item-link {
+        text-decoration: none;
     }
 
     &__img {
@@ -140,20 +148,16 @@
 
     &__hover {
         display: none;
-        position: absolute;
-        top: 0;
-        justify-content: center;
-        padding: 98px 70px 138px 73px;
-        background-color: #3a3838;
-        opacity: 0.8;
+        justify-content: center;        
     }
 
     &__hover-btn {
         @include flex-positioning($align-items: center);
         @include text(13px, 13px, 700, $text-white, none);
         padding: 10px 9px;
-        border: 1px solid $text-white;
-        width: 99px;
+        border: 1px solid $text-white;        
+        position: absolute;
+        top: 98px;
     }
 
     &__hover-btn-img {
@@ -258,7 +262,7 @@
 .subscribe {
     background: url(../img/review-background.jpg) no-repeat;
     background-color: #f2f2f2;
-    height: 438px;    
+    height: 438px;
 
     &__wrapper {
         display: flex;
@@ -339,18 +343,21 @@
     &__form {
         position: relative;
         @include text(14px, null, 400);
+        width: 334px;
     }
 
     &__form-input {
-        padding: 18px 47px 18px 28px;
+        padding: 18px 9px 18px 28px;
         border: none;
         border-radius: 23px 0 0 23px;
         background-color: #e1e1e1;
         @include text($color: $text-dark);
+        width: 229px;
     }
 
     &__form-btn {
         position: absolute;
+        right: -26px;        
         padding: 18px 20px 18px 21px;
         border: none;
         background-color: $text-pink;
