@@ -30,7 +30,63 @@
                     </form>
                 </div>
                 <div class="header__right">
-                    <a href="#" class="header__cart header__cart_hover"><img src="img/cart-img.svg" alt="cart-img"></a>
+                    <div class="header__cart-wrapper">
+                        <a href="#" class="header__cart header__cart_hover"><img src="img/cart-img.svg"
+                                alt="cart-img"></a>
+                        <div class="drop-down-wrapper drop-down-wrapper_cart-pos">
+                            <div class="drop-down-arrow drop-down-arrow_cart-pos"></div>
+                            <!-- Сам продукт -->
+                            <div class="header__drop-down-cart-product">
+                                <a href="#"><img src="img/drop-down1.jpg" alt="product"></a>
+                                <div class="header__drop-down-cart-product-text">
+                                    <h4 class="header__drop-down-cart-product-name">Rebox Zane</h4>
+                                    <div class="header__drop-down-cart-product-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="header__drop-down-cart-product-price-wrapper">
+                                        1 x $250
+                                    </div>
+                                </div>
+                                <a href="#"
+                                    class="header__drop-down-cart-product-del header__drop-down-cart-product-del_hover">
+                                    <i class="fas fa-times"></i>
+                                </a>
+                            </div>
+                            <div class="header__drop-down-cart-product">
+                                <a href="#"><img src="img/drop-down2.jpg" alt="product"></a>
+                                <div class="header__drop-down-cart-product-text">
+                                    <h4 class="header__drop-down-cart-product-name">Rebox Zane</h4>
+                                    <div class="header__drop-down-cart-product-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="header__drop-down-cart-product-price-wrapper">
+                                        1 x $250
+                                    </div>
+                                </div>
+                                <a href="#"
+                                    class="header__drop-down-cart-product-del header__drop-down-cart-product-del_hover">
+                                    <i class="fas fa-times"></i>
+                                </a>
+                            </div>
+                            <div class="header__drop-down-cart-total">
+                                <span>TOTAL</span><span>$500.00</span>
+                            </div>
+                            <a href="#" class="header__drop-down-cart-btn header__drop-down-cart-btn_hover">
+                                Checkout
+                            </a>
+                            <a href="#" class="header__drop-down-cart-btn header__drop-down-cart-btn_hover">
+                                Go to cart
+                            </a>
+                        </div>
+                    </div>
                     <a href="#" class="header__acc-btn header__acc-btn_hover">My Account<i
                             class="fas fa-sort-down header__arrow"></i></a>
                 </div>
@@ -38,13 +94,98 @@
             <!-- nav -->
             <nav class="nav container">
                 <ul class="nav__menu">
-                    <li><a href="#" class="nav__link nav__link_hover">HOME</a></li>
-                    <li><a href="#" class="nav__link nav__link_hover">MAN</a></li>
-                    <li><a href="#" class="nav__link nav__link_hover">WOMEN</a></li>
-                    <li><a href="#" class="nav__link nav__link_hover">KIDS</a></li>
-                    <li><a href="#" class="nav__link nav__link_hover">ACCESSORIES</a></li>
-                    <li><a href="#" class="nav__link nav__link_hover">FEATURED</a></li>
-                    <li><a href="#" class="nav__link nav__link_hover">HOT DEALS</a></li>
+                    <li class="nav__link-wrapper"><a href="#" class="nav__link nav__link_hover">HOME</a></li>
+                    <li class="nav__link-wrapper"><a href="#" class="nav__link nav__link_hover">MAN</a>
+                        <!-- mega-menu -->
+                        <div class="drop-down-wrapper">
+                            <div class="drop-down-arrow"></div>
+                            <div class="drop-down">
+                                <h4 class="drop-down__h4">
+                                    WOMEN
+                                </h4>
+                                <nav>
+                                    <ul class="drop-down__menu">
+                                        <li><a href="#" class="drop-down__link drop-down__link_hover">Dresses</a></li>
+                                        <li><a href="#" class="drop-down__link drop-down__link_hover">Tops</a>
+                                        </li>
+                                        <li><a href="#" class="drop-down__link drop-down__link_hover">Sweaters/Knits</a>
+                                        </li>
+                                        <li><a href="#" class="drop-down__link drop-down__link_hover">Jackets/Coats</a>
+                                        </li>
+                                        <li><a href="#" class="drop-down__link drop-down__link_hover">Blazers</a></li>
+                                        <li><a href="#" class="drop-down__link drop-down__link_hover">Denim</a>
+                                        </li>
+                                        <li><a href="#" class="drop-down__link drop-down__link_hover">Leggings/Pants</a>
+                                        </li>
+                                        <li><a href="#" class="drop-down__link drop-down__link_hover">Skirts/Shorts</a>
+                                        </li>
+                                        <li><a href="#" class="drop-down__link drop-down__link_hover">Accessories</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="drop-down">
+                                <h4 class="drop-down__h4">
+                                    WOMEN
+                                </h4>
+                                <nav>
+                                    <ul class="drop-down__menu">
+                                        <li><a href="#" class="drop-down__link drop-down__link_hover">Dresses</a></li>
+                                        <li><a href="#" class="drop-down__link drop-down__link_hover">Tops</a>
+                                        </li>
+                                        <li><a href="#" class="drop-down__link drop-down__link_hover">Sweaters/Knits</a>
+                                        </li>
+                                        <li><a href="#" class="drop-down__link drop-down__link_hover">Jackets/Coats</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <div class="drop-down">
+                                    <h4 class="drop-down__h4">
+                                        WOMEN
+                                    </h4>
+                                    <nav>
+                                        <ul class="drop-down__menu">
+                                            <li><a href="#" class="drop-down__link drop-down__link_hover">Dresses</a>
+                                            </li>
+                                            <li><a href="#" class="drop-down__link drop-down__link_hover">Tops</a>
+                                            </li>
+                                            <li><a href="#"
+                                                    class="drop-down__link drop-down__link_hover">Sweaters/Knits</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="drop-down">
+                                <h4 class="drop-down__h4">
+                                    WOMEN
+                                </h4>
+                                <nav>
+                                    <ul class="drop-down__menu">
+                                        <li><a href="#" class="drop-down__link drop-down__link_hover">Dresses</a></li>
+                                        <li><a href="#" class="drop-down__link drop-down__link_hover">Tops</a>
+                                        </li>
+                                        <li><a href="#" class="drop-down__link drop-down__link_hover">Sweaters/Knits</a>
+                                        </li>
+                                        <li><a href="#" class="drop-down__link drop-down__link_hover">Jackets/Coats</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <a href="#" class="drop-down__add drop-down__add_hover"><img
+                                        src="img/super-sale-add.jpg" alt="super-sale">
+                                    <div class="drop-down__add-text">
+                                        <span class="drop-down__add-span">SUPER</span>
+                                        <span class="drop-down__add-span">SALE</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav__link-wrapper"><a href="#" class="nav__link nav__link_hover">WOMEN</a></li>
+                    <li class="nav__link-wrapper"><a href="#" class="nav__link nav__link_hover">KIDS</a></li>
+                    <li class="nav__link-wrapper"><a href="#" class="nav__link nav__link_hover">ACCESSORIES</a></li>
+                    <li class="nav__link-wrapper"><a href="#" class="nav__link nav__link_hover">FEATURED</a></li>
+                    <li class="nav__link-wrapper"><a href="#" class="nav__link nav__link_hover">HOT DEALS</a></li>
                 </ul>
             </nav>
             <!-- the brand -->
@@ -282,56 +423,56 @@
                         </article>
                     </div>
                 </div>
-            </div>            
+            </div>
         </div>
         <!-- footer -->
         <footer class="footer">
             <!-- subscibe section -->
             <section class="subscribe">
-                    <div class="container">
-                        <div class="subscribe__wrapper">
-                            <div class="subscribe__review-wrapper">
-                                <article class="subscribe__review">
-                                    <img src="img/review.png" alt="review">
-                                    <blockquote class="subscribe__review-p">“Vestibulum quis porttitor dui! Quisque
-                                        viverra
-                                        nunc
-                                        mi,
-                                        a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”
-                                    </blockquote>
-                                </article>
-                                <div class="subscribe__review-info">
-                                    <h5 class="subscribe__review-name subscribe__review-name_special">Bin Burhan
-                                    </h5>
-                                    <span class="subscribe__review-location">Dhaka, Bd</span>
-                                    <nav>
-                                        <ul class="subscribe__review-nav">
-                                            <li><a href="#"
-                                                    class="subscribe__review-nav-link subscribe__review-nav-link_hover"></a>
-                                            </li>
-                                            <li><a href="#"
-                                                    class="subscribe__review-nav-link subscribe__review-nav-link_active"></a>
-                                            </li>
-                                            <li><a href="#"
-                                                    class="subscribe__review-nav-link subscribe__review-nav-link_hover"></a>
-                                            </li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
-                            <div class="subscribe__form-wrapper">
-                                <div class="subscribe__form-text">
-                                    <h4 class="subscribe__form-h4">Subscribe</h4>
-                                    <p class="subscribe__form-p">FOR OUR NEWLETTER AND PROMOTION</p>
-                                </div>
-                                <form action="#" class="subscribe__form">
-                                    <input type="email" placeholder="Enter Your Email" class="subscribe__form-input">
-                                    <button class="subscribe__form-btn subscribe__form-btn_hover">Subscribe</button>
-                                </form>
+                <div class="container">
+                    <div class="subscribe__wrapper">
+                        <div class="subscribe__review-wrapper">
+                            <article class="subscribe__review">
+                                <img src="img/review.png" alt="review">
+                                <blockquote class="subscribe__review-p">“Vestibulum quis porttitor dui! Quisque
+                                    viverra
+                                    nunc
+                                    mi,
+                                    a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”
+                                </blockquote>
+                            </article>
+                            <div class="subscribe__review-info">
+                                <h5 class="subscribe__review-name subscribe__review-name_special">Bin Burhan
+                                </h5>
+                                <span class="subscribe__review-location">Dhaka, Bd</span>
+                                <nav>
+                                    <ul class="subscribe__review-nav">
+                                        <li><a href="#"
+                                                class="subscribe__review-nav-link subscribe__review-nav-link_hover"></a>
+                                        </li>
+                                        <li><a href="#"
+                                                class="subscribe__review-nav-link subscribe__review-nav-link_active"></a>
+                                        </li>
+                                        <li><a href="#"
+                                                class="subscribe__review-nav-link subscribe__review-nav-link_hover"></a>
+                                        </li>
+                                    </ul>
+                                </nav>
                             </div>
                         </div>
+                        <div class="subscribe__form-wrapper">
+                            <div class="subscribe__form-text">
+                                <h4 class="subscribe__form-h4">Subscribe</h4>
+                                <p class="subscribe__form-p">FOR OUR NEWLETTER AND PROMOTION</p>
+                            </div>
+                            <form action="#" class="subscribe__form">
+                                <input type="email" placeholder="Enter Your Email" class="subscribe__form-input">
+                                <button class="subscribe__form-btn subscribe__form-btn_hover">Subscribe</button>
+                            </form>
+                        </div>
                     </div>
-                </section>
+                </div>
+            </section>
             <div class="information-section">
                 <div class="container">
                     <div class="footer__info-nav-wrapper">

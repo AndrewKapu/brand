@@ -108,6 +108,7 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .header__form-input {
@@ -156,12 +157,22 @@ button {
 }
 
 .header__cart {
+  display: block;
   margin-right: 26px;
 }
 
 .header__cart_hover:hover {
   -webkit-box-shadow: 0px 0px 3px 3px #a4a4a4;
           box-shadow: 0px 0px 3px 3px #a4a4a4;
+}
+
+.header__cart-wrapper {
+  position: relative;
+  padding: 32px 0;
+}
+
+.header__cart-wrapper:hover .drop-down-wrapper {
+  display: block;
 }
 
 .header__acc-btn {
@@ -180,6 +191,104 @@ button {
 .header__acc-btn_hover:hover {
   -webkit-box-shadow: 0px 0px 3px 3px #a4a4a4;
           box-shadow: 0px 0px 3px 3px #a4a4a4;
+}
+
+.header__drop-down-cart-product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 0;
+  border-bottom: 1px solid #ededed;
+}
+
+.header__drop-down-cart-product-text {
+  padding-top: 10px;
+  padding-left: 14px;
+}
+
+.header__drop-down-cart-product-name {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  color: #222222;
+}
+
+.header__drop-down-cart-product-rating {
+  font-size: 12px;
+  font-weight: 400;
+  color: #e4af48;
+  margin: 10px 0;
+  letter-spacing: -2px;
+}
+
+.header__drop-down-cart-product-price-wrapper {
+  font-size: 12px;
+  font-weight: 400;
+  color: #f16d7f;
+}
+
+.header__drop-down-cart-product-del {
+  text-decoration: none;
+  -ms-flex-item-align: center;
+      align-self: center;
+  font-size: 13px;
+  font-weight: 400;
+  color: #ffffff;
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-color: #a4a4a4;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3px;
+  margin-left: 55px;
+}
+
+.header__drop-down-cart-product-del_hover:hover {
+  background-color: #f16d7f;
+}
+
+.header__drop-down-cart-total {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  color: #222222;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 19px;
+  margin-bottom: 32px;
+}
+
+.header__drop-down-cart-btn {
+  display: block;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  color: #222222;
+  text-decoration: none;
+  padding: 19px 74px;
+  border: 1px solid #eaeaea;
+}
+
+.header__drop-down-cart-btn_hover:hover {
+  color: #f16d7f;
+  border-color: #f16d7f;
+}
+
+.header__drop-down-cart-btn:last-child {
+  margin-top: 10px;
 }
 
 .logo {
@@ -236,6 +345,116 @@ button {
 
 .nav__link_hover:hover {
   border-color: #f16d7f;
+}
+
+.nav__link-wrapper {
+  position: relative;
+}
+
+.nav__link-wrapper:hover .drop-down-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.drop-down-wrapper {
+  padding: 20px;
+  padding-top: 0;
+  position: absolute;
+  top: 50px;
+  background-color: #ffffff;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+  display: none;
+  z-index: 1;
+}
+
+.drop-down-wrapper_cart-pos {
+  top: 86px;
+  left: -12px;
+  padding-right: 15px;
+  width: 235px;
+}
+
+.drop-down {
+  margin-right: 46px;
+}
+
+.drop-down:last-child {
+  margin-right: 0;
+}
+
+.drop-down__h4 {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  color: #222222;
+  padding-bottom: 8px;
+  padding-right: 177px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #e8e8e8;
+  padding-top: 20px;
+}
+
+.drop-down__link {
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #646464;
+  text-decoration: none;
+}
+
+.drop-down__link:hover {
+  color: #f16d7f;
+}
+
+.drop-down__add {
+  position: relative;
+  display: inline-block;
+  margin-top: 22px;
+}
+
+.drop-down__add_hover:hover {
+  -webkit-box-shadow: 0px 0px 3px 3px #a4a4a4;
+          box-shadow: 0px 0px 3px 3px #a4a4a4;
+}
+
+.drop-down__add img {
+  display: block;
+}
+
+.drop-down__add-text {
+  position: absolute;
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #ffffff;
+  text-decoration: none;
+  letter-spacing: 0.55px;
+  right: 10px;
+  bottom: 12px;
+}
+
+.drop-down__add-span {
+  display: block;
+}
+
+.drop-down-arrow {
+  width: 14px;
+  height: 14px;
+  border-top: 1px solid #e8e8e8;
+  border-left: 1px solid #e8e8e8;
+  position: absolute;
+  background-color: #fff;
+  z-index: 1;
+  top: -8px;
+  left: 51px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.drop-down-arrow_cart-pos {
+  left: 23px;
 }
 
 .the-brand {
