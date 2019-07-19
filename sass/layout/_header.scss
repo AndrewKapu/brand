@@ -43,7 +43,8 @@
         right: 1px;
         font-size: 14px;
         @include text($size: 14px, $color: $text-gray1, $line-height: 37px);
-        border-left: 1px solid $third-gray;
+        border: 1px solid #e6e6e6;
+        border-right: none;
         padding: 0 11px;
     }
 
@@ -56,7 +57,7 @@
     &__right {
         @include flex-positioning(space-between, center);
     }
-    
+
 
     &__cart {
         display: block;
@@ -73,9 +74,9 @@
             &:hover .drop-down-wrapper {
                 display: block;
             }
-        }        
+        }
     }
-    
+
 
     &__acc-btn {
         display: flex;
@@ -123,7 +124,7 @@
             height: 13px;
             background-color: $text-gray1;
             border-radius: 10px;
-            @include flex-positioning(center, center);            
+            @include flex-positioning(center, center);
             padding: 3px;
             margin-left: 55px;
 
@@ -144,9 +145,9 @@
     &__drop-down-cart-btn {
         display: block;
         text-transform: uppercase;
-        @include text(14px, null, 700, $text-dark, none);        
+        @include text(14px, null, 700, $text-dark, none);
         padding: 19px 74px;
-        border: 1px solid #eaeaea;        
+        border: 1px solid #eaeaea;
 
         &_hover:hover {
             color: $text-pink;
@@ -215,7 +216,7 @@
     display: none;
     z-index: 1;
 
-    &_cart-pos {        
+    &_cart-pos {
         top: 86px;
         left: -12px;
         padding-right: 15px;
