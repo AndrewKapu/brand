@@ -244,5 +244,55 @@
                 }
             }
         }
+    }    
+}
+
+.products-pagination {
+    @include flex-positioning(space-between, center);
+    margin-top: 43px;
+    margin-bottom: 110px;
+    
+    &__menu {
+        @include flex-positioning();
+        margin: 0 -9px;
+        padding: 15px;
+        border: 1px solid #ebebeb;
+        border-radius: 3px;
+        
+        li:first-child  {
+            transform: rotate(180deg);
+        }
+    }
+
+    &__link {
+        @include text(16px, null, 400, $text-gray1, none);
+        margin: 0 9px;
+
+        &_hover:hover {
+            color: $text-pink;
+        }
+
+        &_active {
+            color: $text-pink;
+        }
+
+        &-last-page {
+            margin-left: -9px;
+            &:before {
+                content: '......'
+            }
+        }                
+    }
+
+    &__view-all {
+        @include text(16px, null, 400, $text-gray1, none);
+        padding: 16px 45px;
+        border: 1px solid #ebebeb;
+        border-radius: 3px;
+
+        &_hover:hover {
+            border-color: $text-pink;
+            color: $text-pink;
+        }
     }
 }

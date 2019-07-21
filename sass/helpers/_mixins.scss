@@ -19,3 +19,33 @@
 @mixin hover-shadow1 {
     box-shadow: 0px 0px 3px 3px $text-gray1;
 }
+
+@mixin placeholder($size, $line-height, $weight, $color) {
+    &::-webkit-input-placeholder {
+        font-size: $size;
+        line-height: $line-height;
+        font-weight: $weight;
+        color: $color;
+    }
+
+    &::-moz-placeholder {
+        font-size: $size;
+        line-height: $line-height;
+        font-weight: $weight;
+        color: $color;
+    }
+
+    &:-moz-placeholder {
+        font-size: $size;
+        line-height: $line-height;
+        font-weight: $weight;
+        color: $color;
+    }
+
+    &:-ms-input-placeholder {
+        font-size: $size;
+        line-height: $line-height;
+        font-weight: $weight;
+        color: $color;
+    }
+}

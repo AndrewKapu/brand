@@ -116,6 +116,7 @@
         &_hover:hover .products__img {
             filter: brightness(50%);
         }
+                
     }
 
     &__item-link {
@@ -148,16 +149,34 @@
 
     &__hover {
         display: none;
-        justify-content: center;        
+        justify-content: center;
+
+        &_products-style {
+            position: absolute;
+            top: 149px;
+            width: 100%;
+            justify-content: center;            
+        }
     }
 
     &__hover-btn {
         @include flex-positioning($align-items: center);
         @include text(13px, 13px, 700, $text-white, none);
         padding: 10px 9px;
-        border: 1px solid $text-white;        
+        border: 1px solid $text-white;
+        border-radius: 3px;
         position: absolute;
         top: 98px;
+
+        &_products-style {
+            position: static;
+            width: 20px;
+            padding: 12px 17px;
+
+            &:first-child {
+                margin-right: 9px;
+            }
+        }
     }
 
     &__hover-btn-img {
@@ -227,11 +246,20 @@
         padding-right: 43px;
     }
 
+    &_products-style {
+        @include flex-positioning(space-between, center);
+    }
+
     &__img {
 
         &_offer-style {
             align-self: flex-start;
             margin-right: 33px;
+        }
+
+        &_products-style {
+            align-self: center;
+            margin-right: 0;
         }
     }
 
@@ -243,11 +271,22 @@
             margin-top: 30px;
             padding-top: 30px;
         }
+
+        &_products-style {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 114px;
+        }
     }
 
     &__h4 {
         @include text(20px, 20px, 700, $text-white);
         margin-bottom: 17px;
+
+        &_products-style {
+            margin-top: 32px;
+        }
     }
 
     &__p {
@@ -256,12 +295,17 @@
         &_offer-style {
             width: 219px;
         }
+
+        &_products-style {
+            width: 309px;
+        }
     }
 }
 
 .subscribe {
     background: url(../img/review-background.jpg) no-repeat;
     background-color: #f2f2f2;
+    background-position: top;
     height: 438px;
 
     &__wrapper {
@@ -357,7 +401,7 @@
 
     &__form-btn {
         position: absolute;
-        right: -26px;        
+        right: -26px;
         padding: 18px 20px 18px 21px;
         border: none;
         background-color: $text-pink;
