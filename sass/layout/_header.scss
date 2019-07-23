@@ -115,23 +115,23 @@
             @include text(12px, null, 400, $text-pink);
         }
 
-        &-del {
-            text-decoration: none;
-            align-self: center;
-            @include text(13px, null, 400, $text-white);
-            display: inline-block;
-            width: 13px;
-            height: 13px;
-            background-color: $text-gray1;
-            border-radius: 10px;
-            @include flex-positioning(center, center);
-            padding: 3px;
-            margin-left: 55px;
+        // &-del {
+        //     text-decoration: none;
+        //     align-self: center;
+        //     @include text(13px, null, 400, $text-white);
+        //     display: inline-block;
+        //     width: 13px;
+        //     height: 13px;
+        //     background-color: $text-gray1;
+        //     border-radius: 10px;
+        //     @include flex-positioning(center, center);
+        //     padding: 3px;
+        //     margin-left: 55px;
 
-            &_hover:hover {
-                background-color: $text-pink;
-            }
-        }
+        //     &_hover:hover {
+        //         background-color: $text-pink;
+        //     }
+        // }
     }
 
     &__drop-down-cart-total {
@@ -290,5 +290,29 @@
 
     &_cart-pos {
         left: 23px;
+    }
+}
+
+.product-del-btn {
+
+    text-decoration: none;
+    align-self: center;
+    @include text(13px, null, 400, $text-white);
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: $text-gray1;
+    border-radius: 10px;
+    @include flex-positioning(center, center);
+    padding: 3px;
+    margin-left: 55px;
+
+    &_hover:hover {
+        background-color: $text-pink;
+    }
+
+    &_cart {
+        margin-left: 0;
+        margin-right: 14px;
     }
 }

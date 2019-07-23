@@ -2,7 +2,7 @@
     @include flex-positioning(center);
     position: relative;
     background-color: #f7f7f7;
-    margin-bottom: 760px;
+    margin-bottom: 858px;
 
     &__wrapper {
         @include flex-positioning(center);
@@ -41,7 +41,7 @@
         padding: 73px 260px 122px;
         bottom: -192px;
         @include flex-positioning(null, center, column);
-        bottom: -650px;
+        bottom: -741px;
         background-color: #fff;
 
         &-h {
@@ -129,9 +129,14 @@
             &-item {
                 margin: 0 25px;
             }
+
+            &[open] i {
+                transform: rotate(270deg);
+            }            
         }
 
         &-summary {
+            cursor: pointer;            
             @include text(13px, null, 400, $text-gray1);
             @include flex-positioning(null, center);
 
@@ -158,7 +163,7 @@
                 height: 12px;
                 background-color: $text-pink;
                 background-color: $text-pink;
-            }
+            }            
         }
 
         &-input {
@@ -189,8 +194,7 @@
     }
 }
 
-.additional-products {
-    margin-top: 119px;
+.additional-products {    
     margin-bottom: 73px;
 
     &__h4 {
