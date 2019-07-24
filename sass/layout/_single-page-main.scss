@@ -21,6 +21,7 @@
         background-color: #d9d9d9;
         @include text(14px, null, 400, $text-white, none);
         padding: 16px 20px;
+        @include transition(0.3s);
 
         &_hover:hover {
             background-color: $text-pink;
@@ -182,6 +183,7 @@
             padding: 15px 207px;
             box-sizing: border-box;
             margin-top: 28px;
+            @include transition(0.3s);
 
             &-text {
                 margin-left: 15px;

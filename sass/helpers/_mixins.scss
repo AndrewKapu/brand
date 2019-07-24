@@ -49,3 +49,8 @@
         color: $color;
     }
 }
+
+//Замедление перехода
+@mixin transition($values: null) {
+    transition: $values;
+}

@@ -70,6 +70,7 @@
         background-color: $text-white;
         margin: 0 4px;
         @include text(16px, null, 400, $secondary-gray);
+        @include transition(0.3s);
 
         &_hover:hover {
             color: $text-white;

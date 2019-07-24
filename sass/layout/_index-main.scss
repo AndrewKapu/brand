@@ -38,6 +38,7 @@
 
     &__item {
         display: block;
+        @include transition(0.3s);
 
         &_with-background {
             background-color: #dadad2;
@@ -103,6 +104,7 @@
         text-decoration: none;
         position: relative;
         margin: 20px 15px;
+        @include transition(0.3s);
 
 
         &_hover:hover {
@@ -192,6 +194,7 @@
         @include text(16px, 16px, 700, $text-white, none);
         padding: 14px 20px;
         background-color: $text-pink;
+        @include transition(0.3s);
 
         i {
             margin-left: 9px;
@@ -354,6 +357,7 @@
         width: 38px;
         height: 4px;
         background-color: #d6d6d6;
+        @include transition(0.3s);
 
         &_active {
             background-color: $text-pink;
@@ -407,6 +411,7 @@
         background-color: $text-pink;
         border-radius: 0 23px 23px 0;
         @include text($color: $text-white);
+        @include transition(0.3s);
 
         &_hover:hover {
             @include hover-shadow1;

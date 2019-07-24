@@ -5,6 +5,7 @@
     border: 1px solid $background-gray;
     padding: 20px 40px;
     background-color: transparent;
+    @include transition(0.3s);
 
     &_hover:hover {
         color: $text-white;
@@ -71,6 +72,10 @@
 
     &__item-img {
         display: block;
+    }
+
+    &__item-link {
+        @include transition(0.3s);
     }
 
     &__item-link:hover {
