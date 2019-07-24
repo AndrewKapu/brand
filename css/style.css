@@ -1733,6 +1733,7 @@ button {
   display: inline-block;
   text-transform: uppercase;
   font-size: 14px;
+  line-height: 14px;
   font-weight: 700;
   color: #222222;
   text-decoration: none;
@@ -2043,5 +2044,166 @@ button {
 
 .checkout-info__main-button {
   margin-top: 17px;
+}
+
+.checkout {
+  margin: 95px 0;
+}
+
+.checkout__details {
+  padding: 33px 0;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.checkout__details[open] {
+  padding-bottom: 79px;
+}
+
+.checkout__summary {
+  font-size: 16px;
+  font-weight: 700;
+  color: #222222;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.checkout__summary:focus {
+  outline: none;
+}
+
+.checkout__summary::-webkit-details-marker {
+  display: none;
+}
+
+.checkout__item-text-pair {
+  margin: 30px 0;
+}
+
+.checkout__item-shipping {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 35px;
+  margin-top: 39px;
+}
+
+.checkout__item-text {
+  font-size: 13px;
+  font-weight: 400;
+  color: #a4a4a4;
+}
+
+.checkout__item-text_heading {
+  text-transform: uppercase;
+  color: #222222;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.checkout__item-text_heading-input {
+  text-transform: uppercase;
+  color: #222222;
+  margin-bottom: 15px;
+  font-size: 12px;
+}
+
+.checkout__item-text_mg {
+  margin-bottom: 15px;
+}
+
+.checkout__item-text_checkbox {
+  margin: 0;
+}
+
+.checkout__item-text_required {
+  color: #ff0d0d;
+  font-weight: 700;
+  margin-bottom: 26px;
+}
+
+.checkout__item-text_required-star {
+  font-size: 17px;
+  color: #ff0d0d;
+}
+
+.checkout__radio-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.checkout__radio-wrapper:first-child {
+  margin-bottom: 15px;
+}
+
+.checkout__radio {
+  display: none;
+}
+
+.checkout__radio-custom {
+  position: relative;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #222222;
+  border-radius: 9px;
+}
+
+.checkout__radio-custom, .checkout__radio-label {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.checkout__radio:checked + .checkout__radio-custom::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  display: block;
+  position: absolute;
+  top: 3px;
+  right: 4px;
+  bottom: 4px;
+  left: 3px;
+  background: #222222;
+  border-radius: 5px;
+}
+
+.checkout__radio-label {
+  margin-left: 14px;
+}
+
+.checkout__text-arrow {
+  margin-right: 4px;
+}
+
+.checkout__main-button {
+  padding-right: 54px;
+  padding-left: 54px;
+  margin-top: 8px;
+}
+
+.checkout__main-button_forgot {
+  text-transform: none;
+  padding: 0;
+  border: none;
+  margin-left: 32px;
+}
+
+.checkout__main-input-label {
+  display: block;
+  margin: 23px 0;
+}
+
+.checkout__main-input {
+  width: 390px;
+  margin-bottom: 22px;
 }
 /*# sourceMappingURL=style.css.map */
