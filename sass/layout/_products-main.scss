@@ -54,7 +54,8 @@
             font-weight: 700;
         }
 
-        &-summary {
+        &-summary {            
+            cursor: pointer;
             display: block;
             text-transform: uppercase;
             padding: 12px 173px 15px 11px;
@@ -75,6 +76,10 @@
 
             &:focus {
                 outline: none;
+            }
+
+            &:hover {
+                @include hover-shadow1;
             }
         }
 

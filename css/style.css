@@ -1174,6 +1174,7 @@ button {
 }
 
 .products-area__side-nav-summary {
+  cursor: pointer;
   display: block;
   text-transform: uppercase;
   padding: 12px 173px 15px 11px;
@@ -1197,6 +1198,11 @@ button {
 
 .products-area__side-nav-summary:focus {
   outline: none;
+}
+
+.products-area__side-nav-summary:hover {
+  -webkit-box-shadow: 0px 0px 3px 3px #a4a4a4;
+          box-shadow: 0px 0px 3px 3px #a4a4a4;
 }
 
 .products-area__side-nav-menu {
@@ -2138,6 +2144,7 @@ button {
 }
 
 .checkout__item-text_heading-input {
+  display: block;
   text-transform: uppercase;
   color: #222222;
   margin-bottom: 15px;
